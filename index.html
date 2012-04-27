@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Validate.js : Simple form validation jQuery plugin" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Validate.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bpanahij/validate.js">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Validate.js</h1>
+          <h2 id="project_tagline">Simple form validation jQuery plugin</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/bpanahij/validate.js/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/bpanahij/validate.js/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Valdate.js</h3>
+
+<p>This is a simple jQuery plugin I wrote to create simple front end validation. It is not meant to deal with security issues or to sanitize inputs. It is only meant to provide feedback to the user, to tell them whether their input is appropriate. The plugin functions by looking for a regular expression inside an attribute of an input tag. </p>
+
+<h2>Purpose</h2>
+
+<p>To give the user useful feedback in form fields. This plugin will not provide value sanitizing security, because it is modifiable by the client. However, it can help guid the user to know hen their input is compliant with requirements.</p>
+
+<h2>Functionality</h2>
+
+<h3>Regular Expressions and Classes</h3>
+
+<p>Validate.js uses a style class to indicate whether the field should be validated and an attribute to contain a regular expression to validate the field value against.</p>
+
+<p>Here is an input text field that will only allow the character "A":
+<code>&lt;input class="validate" validate="^[A]*$"&gt;</code></p>
+
+<p>Here is an input text field that will only allow numeric values:
+<code>&lt;input class="validate" validate="^[0-9]*$"&gt;</code></p>
+
+<p>The class: validate, specifies that this is a field that should be validated, and the validate attribute contains a regular expression that indicates which value are valid.</p>
+
+<h3>Required or Not</h3>
+
+<p>You can also specify a value is required with the required (req) attribute:
+<code>&lt;input class="validate" validate="^[A]*$" req="1"&gt;</code></p>
+
+<h3>Other Requirements</h3>
+
+<p>Validate.js uses a field with the unique id alert <code>&lt;div id="alert"&gt;&lt;/div&gt;</code> to place alerts and messages.</p>
+
+<h2>Installing</h2>
+
+<p>To install, you should include validate.js on the page you wish to validate. Then, it will load itself and perform validation on all inputs with the above described attributes. Voila! You are using validate.js!</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Validate.js maintained by <a href="https://github.com/bpanahij">bpanahij</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
